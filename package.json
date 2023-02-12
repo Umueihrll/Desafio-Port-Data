@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "headless":"node headlessFalse.js",
     "test": "jest"
   },
   "repository": {
