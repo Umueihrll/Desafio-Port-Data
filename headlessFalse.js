@@ -26,13 +26,7 @@ async function chamaEu()  {
   await page.type(passwordInput, process.env.PASSWORD)
   await page.waitForSelector('[type="submit"]')
   await page.click('[type="submit"]')
-  try {
-    await page.authenticate({username: process.env.USER, password: process.env.PASSWORD})
-    then
-  } catch (error) {
-    
-  }
-
+  
   await page.waitForSelector('[aria-label="View profile and more"]')
   await page.click('[aria-label="View profile and more"]')
   
